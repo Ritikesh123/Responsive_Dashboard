@@ -3,12 +3,12 @@
 ---------------Header-----------------
 
 - use company logo
-- In div tag I use same element in the mentioned link
+- In div tag use same element in the mentioned link
 
 ----------------Dashboard-------------
 
 - use google fonts icons
-- impoert the link in the CSS file
+- import the link in the CSS file
 
 ----------------BAR CHART---------------
 
