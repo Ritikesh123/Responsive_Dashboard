@@ -1,3 +1,6 @@
+
+// ---------------------------BAR GRAPH---------------------//
+
 var ctx = document.getElementById("myChart");
 
 new Chart(ctx, {
@@ -9,8 +12,19 @@ new Chart(ctx, {
             {
                 data:[10000, 40000, 30000, 28000, 9000, 38000, 40000, 42000, 44000, 46000, 50000, 28000],
                 label:"Amount per Month",
-                backgroundColor: ["#4285F4", "#4285F4", "#4285F4", "#4285F4", "#4285F4", "#4285F4", "#4285F4", "#4285F4", "#4285F4", "#4285F4", "#4285F4", "#4285F4"],
-                
+                backgroundColor: ["#4285F4", "#4285F4", 
+                                  "#4285F4", "#4285F4", 
+                                  "#4285F4", "#4285F4", 
+                                  "#4285F4", "#4285F4", 
+                                  "#4285F4", "#4285F4", 
+                                  "#4285F4", "#4285F4"
+                                ],
+
+            
+                                borderColor: "#4285F4",
+                                borderWidth: 2,
+                                borderRadius: 10, 
+                                borderSkipped: 'bottom'               
             }
         ]
     },
@@ -28,6 +42,11 @@ new Chart(ctx, {
                     display:true,
                     position: "bottom",
                     align:"end",
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true
                 }
             }
         }
@@ -53,7 +72,7 @@ new Chart(ctx, {
         responsive: false,
         layout:{
             padding: {
-                left: 50,
+                left: 80,
                 right: 0,
                 top: 50,
                 bottom: 0,
